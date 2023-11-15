@@ -1,0 +1,2 @@
+INSERT INTO users (username, email, password, created_at, updated_at, created_by, updated_by, element_status)
+VALUES ('vicente96074', 'vicente96074@gmail.com', '$2a$10$fwKNZSvMlkOpN5lp7d23gOUXGPzmVia.J4yRh0d6OztYaUyQNNGIy', NOW(), NOW(), 'SYSTEM', 'SYSTEM', 'NEW');
