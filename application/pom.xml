@@ -1,46 +1,46 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>com.kojstarinnovations</groupId>
-		<artifactId>ConJava17</artifactId>
-		<version>1.0</version>
-	</parent>
+    <parent>
+        <groupId>com.kojstarinnovations</groupId>
+        <artifactId>ConJava17</artifactId>
+        <version>1.0</version>
+    </parent>
 
-	<artifactId>application</artifactId>
-	<version>1.0</version>
-	<name>application-1.0</name>
-	<packaging>war</packaging>
+    <artifactId>application</artifactId>
+    <version>1.0</version>
+    <name>application-1.0</name>
+    <packaging>jar</packaging>
 
-	<dependencies>
-		<!-- https://mvnrepository.com/artifact/junit/junit -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.13.2</version>
-			<scope>test</scope>
-		</dependency>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
 
-		<!-- lombok -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.30</version>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
-	<!-- Configuración de construcción específica del módulo -->
-	<build>
-		<plugins>
-			<!-- Plugin para empaquetar la aplicación como un archivo WAR -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.3.1</version>
-				<!-- Configuración específica del módulo, si es necesario -->
-			</plugin>
-		</plugins>
-	</build>
+    <!-- Configuración de construcción específica del módulo -->
+    <build>
+        <plugins>
+            <!-- Plugin para empaquetar la aplicación como un archivo WAR -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+                <!-- Configuración específica del módulo, si es necesario -->
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -11,7 +11,7 @@
     <artifactId>domain</artifactId>
     <version>1.0</version>
     <name>domain-1.0</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -72,15 +72,12 @@
         </dependency>
     </dependencies>
 
-    <!-- Configuración de construcción específica del módulo -->
     <build>
         <plugins>
-            <!-- Plugin para empaquetar la aplicación como un archivo WAR -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.1</version>
-                <!-- Configuración específica del módulo, si es necesario -->
             </plugin>
         </plugins>
     </build>
