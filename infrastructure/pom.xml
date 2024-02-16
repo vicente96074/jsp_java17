@@ -3,14 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.kojstarinnovations</groupId>
-        <artifactId>ConJava17</artifactId>
-        <version>1.0</version>
+        <groupId>com.kojstarinnovations.jsp17</groupId>
+        <artifactId>principal</artifactId>
+        <version>0.0.1</version>
     </parent>
 
     <artifactId>infrastructure</artifactId>
-    <version>1.0</version>
-    <name>infrastructure-1.0</name>
+    <version>0.0.1</version>
+    <name>infrastructure-jsp17-0.0.1</name>
     <packaging>war</packaging>
 
     <properties>
@@ -39,15 +39,15 @@
         </dependency>
 
         <dependency>
-            <groupId>com.kojstarinnovations</groupId>
+            <groupId>com.kojstarinnovations.jsp17</groupId>
             <artifactId>application</artifactId>
-            <version>1.0</version>
+            <version>0.0.1</version>
         </dependency>
 
         <dependency>
-            <groupId>com.kojstarinnovations</groupId>
+            <groupId>com.kojstarinnovations.jsp17</groupId>
             <artifactId>domain</artifactId>
-            <version>1.0</version>
+            <version>0.0.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
