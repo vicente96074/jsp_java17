@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page import="com.kojstarinnovations.conjava17.ports.data.request.LoginUser" %>
+<%@ page import="com.kojstarinnovations.jps17.data.request.LoginUser" %>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -8,7 +8,8 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <c:if test="${loginUser != null}">
+
+        <c:if test="${LoginUser != null}">
             <div class="dropdown">
                 <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -17,13 +18,13 @@
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="javascript:void(0);" onclick="submitForm('${pageContext.request.contextPath}/basicUser?action=editProfile')">Editar perfil</a></li>
-                    <c:if test="${loginUser.hasRol('ADMINISTRATOR')}">
+                    <c:if test="${LoginUser.hasRol('ADMINISTRATOR')}">
                         <li><a class="dropdown-item" href="javascript:void(0);" onclick="submitForm('${pageContext.request.contextPath}/administration')">Administración</a></li>
                     </c:if>
-                    <c:if test="${loginUser.hasRol('ATM')}">
+                    <c:if test="${LoginUser.hasRol('ATM')}">
                         <li><a class="dropdown-item" href="javascript:void(0);" onclick="submitForm('${pageContext.request.contextPath}/reception')">Recepción</a></li>
                     </c:if>
-                    <c:if test="${loginUser.hasRol('CLIENT')}">
+                    <c:if test="${LoginUser.hasRol('CLIENT')}">
                         <li><a class="dropdown-item" href="javascript:void(0);" onclick="submitForm('${pageContext.request.contextPath}/client')">Cliente</a></li>
                     </c:if>
                     <li><a class="dropdown-item" href="javascript:void(0);" onclick="submitForm('${pageContext.request.contextPath}/logout')">Cerrar Sesión</a></li>
